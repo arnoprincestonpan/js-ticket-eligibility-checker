@@ -4,12 +4,35 @@
 
 body{
     margin: 0;
+    font-family: monospace;
+
+    background-color: grey;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .container{
+    border: 0.10rem solid black;
+    border-radius: 1rem;
+    padding: 1rem;
     margin: 2rem;
+
+    background-color: wheat;
+    max-width: 320px;
 }
 
-li{
-    list-style: none;
+.text-fields{
+    display: flex;
+    flex-direction: row;
+}
+
+.labels, .fields{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
