@@ -86,7 +86,7 @@ function calculateEligibility(){
         html += "<p>" + cashInput.value + " is enough for " + quantityInput.value +  " tickets. </p>"
     }
 
-    if(ageInput.value > 16 && (quantityInput.value * ticketCost) > cashInput.value){
+    if(ageInput.value > 16 && (quantityInput.value * ticketCost) < cashInput.value){
         html += "<p><b>Congratulations. Here are your tickets.</b></p>"
     }else{
         html += "<p><b>Sorry, you didn't make at least one requirement.</b></p>"
